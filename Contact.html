@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/KingdomWatch.css">
+    <link rel="stylesheet" href="css/footer.css"> 
+    <link href="css/CSSElement.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a3633fc35f.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Liên hệ</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a id="Logo" href="Index.html"><img src="Image/Header/Logo.svg" alt="Logo"></a>
+            <a class="NavElement" href="index.html" id="underline_none">
+                <p>Trang chủ</p>
+            </a>
+            <p class="NavElement"><span><a id="underline_none">Đồng hồ</a></span></p>
+            <a class="NavElement" href="News.html">
+                <p>Tin tức</p>
+            </a>
+            <div class="NavElement" id="MainNavElement">
+                <p>Liên hệ</p>
+                <div class="dropdown-content">
+                  <a href="ContactInfo.html">Thông tin liên hệ</a>
+                  <a href="Contact.html">Đơn liên hệ</a>
+                </div>
+            </div>
+            <a class="NavElement" href="Login.html" id="underline_none">
+                <p>Tài khoản</p>
+            </a>
+            <div class="NavElement" id="Cart">
+                <img src="Image/Header/Cart.svg" alt="Cart">
+                <sup>1</sup>
+            </div>
+            <div class="NavElement" id="Search"><img src="Image/Header/SearchRight.svg" alt="Search"></div>
+        </nav>
+        <div class="PseudoNav">
+            <a id="Logo" href=""><img src="Image/Header/Logo.svg" alt="Logo"></a>
+        </div>
+
+        <div id="TransparentGlass"></div>
+        <div id="CartContent">
+            <div id="CartTitle">
+                <p>Giỏ hàng của bạn</p>
+                <img src="Image/Header/Xbutton.svg" alt="Xbutton">
+            </div>
+            <div id="CartProduct">
+                <div class="CartProductElement">
+                    <img class="ImageOfProduct" src="Image/Header/Product/vd.sharp.png" alt="CurnonWatch">
+                    <div class="CartProductElementPrice">
+                        <p class="NameOfProduct">Sharp</p>
+                        <div class="NumberOfElementPriceContainer">
+                            <div class="NumberOfCartProductElement">
+                                <p class="NumberOfEachProduct">1</p>
+                                <div id="ArrowOfCartProductElement">
+                                    <img class="IncreaseElementButton" src="Image/Header/Product/IncreaseElement.svg"
+                                        alt="IncreaseButton">
+                                    <img class="DecreaseElementButton" src="Image/Header/Product/DecreaseElement.svg"
+                                        alt="DecreaseButton">
+                                </div>
+                            </div>
+                            <p class="PriceOfEachSingleProduct">x 1.251.000 VND</p>
+                        </div>
+                    </div>
+                    <img class="TrashButton" src="Image/Header/Product/Trash.svg" alt="Trash">
+                    <div class="CancelCartProduct">
+                        <p>Bạn có chắc chắn?</p>
+                        <div>
+                            <p>Quay lại</p>
+                            <div>
+                                <p class="CancelCartProductButton">Xóa khỏi giỏ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="ShippingTimeCart">
+                <p>Ước tính thời gian ship là 1/1/2021</p>
+            </div>
+            <div id="PriceCart">
+                <p>Thành tiền:</p>
+                <p id="ValueOfPriceCart"></p>
+            </div>
+            <a id="PurchaseButton" href="Payment.html">THANH TOÁN</a>
+            <div id="PolicyCart">
+                <div class="PolicyCartColumn">
+                    <img src="Image/Header/Warranty.svg" alt="Warranty">
+                    <p>Bảo hành 10 năm <br> lỗi nhà sản xuất</p>
+                </div>
+                <div class="PolicyCartColumn">
+                    <img src="Image/Header/Shipping.svg" alt="Shipping">
+                    <p>Freeship <br> với đơn hàng > 700K</p>
+                </div>
+            </div>
+            <div id="NoProductInCart">
+                <h3>Hiện tại chưa có sản phẩm nào trong giỏ hàng của bạn</h3>
+                <p>Tiếp tục mua sắm</p>
+            </div>
+        </div>
+
+        <div id="SearchContent">
+            <div>
+                <img src="Image/Header/Xbutton.svg" alt="XButton">
+            </div>
+            <div>
+                <img src="Image/Header/SearchLeft.svg" alt="Search">
+                <input type="text" id="SearchInput" placeholder="Tìm kiếm ...">
+            </div>
+        </div>
+
+        <div id="WatchContent">
+            <a href="DongHoNam.html"><img src="Image/Header/OrientLogo.svg" alt="Orient"></a>
+            <a href="DongHoNam.html"><img src="Image/Header/HublotLogo.svg" alt="Hublot"></a>
+            <a href="DongHoNam.html"><img src="Image/Header/RolexLogo.svg" alt="Rolex"></a>
+            <a href="DongHoNam.html"><img src="Image/Header/SamsungLogo.svg" alt="Samsung"></a>
+            <a href="DongHoNam.html"><img src="Image/Header/CasioLogo.svg" alt="Casio"></a>
+            <a href="DongHoNam.html"><img src="Image/Header/AppleLogo.svg" alt="Apple"></a>
+            <a href="DongHoNam.html"><img src="Image/Header/SeikoLogo.svg" alt="Seiko"></a>
+            <a href="DongHoNam.html"><img src="Image/Header/CitizenLogo.svg" alt="Citizen"></a>
+            <a href="DongHoNam.html"><img src="Image/Header/DWLogo.svg" alt="DW"></a>
+            <a href="DongHoNam.html"><img src="Image/Header/CurnonLogo.svg" alt="Curnon"></a>
+            <a href="DongHoNam.html"><img src="Image/Header/GShockLogo.svg" alt="GShock"></a>
+            <a href="DongHoNam.html"><img src="Image/Header/FossilLogo.svg" alt="Fossil"></a>
+            <a href="DongHoNam.html"><img src="Image/Header/EfidiceLogo.svg" alt="Efidice"></a>
+            <a href="DongHoNam.html"><img src="Image/Header/SkmeiLogo.svg" alt="Skmei"></a>
+            <a href="DongHoNam.html"><img src="Image/Header/MiniFocusLogo.svg" alt="MiniFocus"></a>
+            <a href="DongHoNam.html"><img src="Image/Header/MVWLogo.svg" alt="MVW"></a>
+            <a href="DongHoNam.html"><img src="Image/Header/TitanLogo.svg" alt="Titan"></a>
+            <a href="DongHoNam.html"><img src="Image/Header/WeideLogo.svg" alt="Weide"></a>
+            <a href="DongHoNam.html"><img src="Image/Header/NakzenLogo.svg" alt="Nakzen"></a>
+            <a href="DongHoNam.html"><img src="Image/Header/MichaelKorsLogo.svg" alt="MichaelKors"></a>
+        </div>
+
+        <div id="Banner_Contact">
+            <div id="BannerContent">
+                <h1>Đồng hồ chất, chuẩn lịch lãm</h1>
+                <h2>Bắt đầu trải nghiệm đẳng cấp mua sắm</h2>
+                <a id="ShoppingButton" href="DongHoNam.html">Khám phá ngay</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- LIÊN HỆ -->
+    <div id="Contact">
+        <div id="BackgroundContact">
+            <div id="BackgroundContactPlate"></div>
+            <div id="BackgroundContactContent">
+                <div class="BackgroundContactContentElement">
+                    <div>
+                        <img src="Image/Contact/Location.svg" alt="Location">
+                        <p>Địa chỉ</p>
+                    </div>
+                    <p>Khu phố 6, phường Linh Trung, quận Thủ Đức, thành phố Hồ Chí Minh</p>
+                </div>
+                <div class="BackgroundContactContentElement">
+                    <div>
+                        <img src="Image/Contact/Phone.svg" alt="Phone">
+                        <p>Số điện thoại</p>
+                    </div>
+                    <p>(028) 372 52002</p>
+                </div>
+                <div class="BackgroundContactContentElement">
+                    <div>
+                        <img src="Image/Contact/Mail.svg" alt="Mail">
+                        <p>Email</p>
+                    </div>
+                    <p>watchkingdom@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div id="ContactForm">
+            <h2>Điền thông tin của bạn</h2>
+            <form id="ContactFormInputContainer">
+                <div>
+                    <label class="ContactFormLabel" for="ContactFormNameInput">Họ tên *</label>
+                    <input type="text" name="ContactFormNameInput" id="ContactFormNameInput" class="ContactFormInput">
+                    <p class="ContactFormError" id="ContactFormNameError">Nhập tên của bạn <img src="Image/Contact/ExclamationMark.svg" alt="ExclamationMark"></p>
+                </div>
+                <div>
+                    <label class="ContactFormLabel" for="ContactFormMailInput">Email *</label>
+                    <input type="email" name="ContactFormMailInput" id="ContactFormMailInput" class="ContactFormInput">
+                    <p class="ContactFormError" id="ContactFormMailError">Nhập email của bạn <img src="Image/Contact/ExclamationMark.svg" alt="ExclamationMark"></p>
+                </div>
+                <div>
+                    <label class="ContactFormLabel" for="ContactFormPhoneInput">Số điện thoại</label>
+                    <input type="number" name="ContactFormPhoneInput" id="ContactFormPhoneInput" class="ContactFormInput">
+                    <p class="ContactFormError" id="ContactFormPhoneError">Số điện thoại không hợp lệ <img src="Image/Contact/ExclamationMark.svg" alt="ExclamationMark"></p>
+                </div>
+                <div>
+                    <label class="ContactFormLabel" for="ContactFormNoticeInput">Nội dung *</label>
+                    <textarea name="ContactFormNoticeInput" id="ContactFormNoticeInput" class="ContactFormInput"></textarea>
+                    <p class="ContactFormError" id="ContactFormNoticeError">Nhập nội dung của bạn <img src="Image/Contact/ExclamationMark.svg" alt="ExclamationMark"></p>
+                </div>
+            </form>
+            <button type="submit">Gửi yêu cầu</button>
+            <p id="ContactNotice">Thông tin của bạn đã được ghi nhận <br> Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất</p>
+        </div>
+    </div>
+
+    <!-- ĐĂNG KÍ NHẬN TIN MỚI -->
+    <section id="NewInformation">
+        <h2>Đăng kí nhận tin mới</h2>
+        <p>Nhận các tin tức về chương trình và khuyến mãi sớm nhất</p>
+        <div id="NewInfoInput">
+            <input class="NewInfoInputElement" type="text" id="NameInput" placeholder="Họ tên">
+            <input class="NewInfoInputElement" type="text" id="EmailInput" placeholder="Email">
+            <div class="NewInfoInputElement"><p>ĐĂNG KÍ</p></div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div style="background-color: lightgrey;">
+        <div id="Footer">
+            <div class="FooterColumn">
+                <div class="FooterColumnContent">
+                    <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+                    <div>
+                        <p>Các câu hỏi thường gặp</p>
+                        <p>Gửi yêu cầu hỗ trợ</p>
+                        <p>Hướng dẫn đặt hàng</p>
+                        <p>Phương thức thanh toán</p>
+                    </div>
+                </div>
+            </div>
+            <div class="FooterColumn">
+                <div class="FooterColumnContent">
+                    <h3>LIÊN HỆ</h3>
+                    <div>
+                        <p> <img class="Icon" src="Image/Location.svg"> Khu phố 6, P.Linh Trung, Q.Thủ Đức, Tp.Hồ Chí Minh.
+                        </p>
+                        <p> <img class="Icon" src="Image/Phone.svg"> (028) 372 52002</p>
+                        <p> <img class="Icon" src="Image/Fax.svg" alt=""> (028) 372 52148</p>
+                        <a href="mailto:example@email.com"> <img class="Icon" src="Image/Mail.svg" alt="">
+                            watchkingdom@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="FooterColumn">
+                <div class="FooterColumnContent">
+                    <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
+                    <div>
+                        <a href="#"><img class="SocialNetWorkIcon"
+                                src="images/Contact With Us/social-facebook-circle-512.webp"> Facebook</a>
+                        <a href="#"><img class="SocialNetWorkIcon" src="images/Contact With Us/twitter_circle-512.webp">
+                            Twitter</a>
+                        <a href="#"><img class="SocialNetWorkIcon" src="images/Contact With Us/34_google_plus-512.webp">
+                            Google</a>
+                        <a href="#"><img class="SocialNetWorkIcon" src="images/Contact With Us/768px-Instagram_icon.png">
+                            Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="FooterColumn">
+                <div class="FooterColumnContent">
+                    <h3>PHƯƠNG THỨC THANH TOÁN</h3>
+                    <div class="FooterPayment">
+                        <img class="PaymentIcon" src="Image/ViettelPay.svg">
+                        <img class="PaymentIcon" src="Image/ACB.svg">
+                        <img class="PaymentIcon" src="Image/AirPay.svg">
+                        <img class="PaymentIcon" src="Image/MasterCard.svg">
+                        <img class="PaymentIcon" src="Image/Momo.svg">
+                        <img class="PaymentIcon" src="Image/Paypal.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div align="center">
+            <hr style="margin-bottom: 15px;">
+        </div>
+        <div class="footer__last-item">
+            <p class="footer__last-line" style="padding-bottom: 15px;"><span class="copyright">Copyright</span>
+                "&nbsp;©&nbsp; 2010-2021 Watch Kingdom Q.P.S."
+                <span class="rights-reserved">All rights reserved.</span>
+            </p>
+        </div>
+    </div>
+
+    <script src="JS/KingdomWatch.js"></script>
+    <script src="JS/Run-snow.js"></script>
+</body>
+
+</html>
